@@ -80,6 +80,10 @@ The web app runs at http://localhost:3000 and the API at http://localhost:4000. 
 - `DEPLOYMENT.md`: running it in production
 - `BUILD_LOG.md`: how the build progressed
 
+## License
+
+Released under the [MIT License](LICENSE).
+
 ## Author
 
 Built by [@jainprateek0603](https://github.com/jainprateek0603).
