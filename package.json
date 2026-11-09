@@ -1,0 +1,28 @@
+{
+  "name": "nexushq",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @nexushq/api --filter @nexushq/worker --filter @nexushq/web dev",
+    "lint": "eslint .",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test",
+    "build": "pnpm -r --if-present build",
+    "db:generate": "pnpm --filter @nexushq/db generate",
+    "db:migrate": "pnpm --filter @nexushq/db migrate",
+    "db:seed": "pnpm --filter @nexushq/db seed",
+    "format:check": "prettier --check .",
+    "postinstall": "pnpm --filter @nexushq/db generate"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "eslint": "^9.36.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@12.11.2"
+}
